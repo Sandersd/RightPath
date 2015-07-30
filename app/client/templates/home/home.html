@@ -1,0 +1,64 @@
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Palanquin+Dark:400,700' rel='stylesheet' type='text/css'>
+</head>
+<template name="Home">
+{{#if started}}
+	<div class="container text-center ">
+
+<br><br><br>
+<h3>Let's get to know you a little better, what is your name? (Note: Personal information will never be stored)</h3><br>
+<input type="text" name='name' id="name"><br><br>
+<button class="btn btn-primary" id='step0'>Next</button>
+{{#if step 1}}
+<h2>Hello {{name}}! Tell us about yourself</h2><br>
+<select id="category-select">
+    <option disabled="disabled" selected="selected">I am...</option> 
+    {{#each categories}}
+        <option value="{{this}}">{{this}}</option>
+    {{/each}}
+</select>
+{{/if}}
+{{#if step 2}}
+
+  <h2>What topic of reintegration would you like to learn more about?</h2><br>
+  <select id="topic-select">
+    <option disabled="disabled" selected="selected">Topics</option> 
+    {{#each topics}}
+        <option value="{{this}}">{{this}}</option>
+    {{/each}}
+</select>
+
+{{/if}}
+{{#if step 3}}
+
+  <h2>Anything specific about <strong>{{topic}}</strong>?</h2><br>
+  <select id="specific-select">
+    <option disabled="disabled" selected="selected">Common Scenarios</option> 
+    {{#each specifics}}
+        <option value="{{this}}">{{this}}</option>
+    {{/each}}
+</select>
+
+{{/if}}
+
+{{#if step 4}}
+
+  <h2>Here's a resource about <strong>{{specific}}</strong></h2><br>
+  <a href="{{link.link}}"><h3>{{link.title}}</h3></a>
+  <p>{{link.description}}</p>
+{{/if}}
+      </div>
+{{else}}
+      <div class="container text-center title">
+      <h1>Welcome to RightPath!</h1>
+    </div>
+    <div class="container text-center">
+      <h2>Reintegrating into your community after spending time in prison is hard, that's why we created this free, easy-to-use list of resources for you and your loved ones. Simply click the button below, fill out a short form, and get specific information tailored to your needs. Alternatively, you can take the self-guided approach by clicking on one of the topics in the menu bar and browsing through the list of resources.</h2>
+    </div>
+    <div class="container text-center butn">
+      <button class="button" id="startBtn">Get Started</button>
+    </div>
+
+{{/if}}
+</template>
+ 

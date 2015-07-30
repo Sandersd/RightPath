@@ -1,0 +1,76 @@
+/*****************************************************************************/
+/* main: Style */
+/*****************************************************************************/
+body {
+	/*background: url(rightpath.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+* {
+	font-family: 'Palanquin Dark', sans-serif;
+	color: #364543;
+}
+
+.butn {
+	margin-top: 30px;
+}
+.button {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   padding: 8.5px 17px;
+   
+   border-radius: 15px;
+   
+   color: #4d424d;
+   font-size: 25px;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+i {
+	color: #597A74;
+}
+
+.col-md-4{
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+.opi {
+  
+}
+
+.links {
+  margin-top: 50px;
+}
+
+h1 {
+	
+	font-weight: 700;
+	
+	font-size: 60px !important;
+	margin-bottom: 50px;
+	
+}
+
+h2 {
+	margin-top: 50px;
+}
+
+.title {
+	margin-top: 75px;
+	border-bottom: 3px #364543 solid;
+}
+
